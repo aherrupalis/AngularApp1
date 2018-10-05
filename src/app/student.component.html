@@ -1,0 +1,38 @@
+<!-- <h2 [hidden]="isHide">Its Attribute Directive</h2>
+    <h2 [ngStyle]="myColor"> Name={{name|titlecase}}</h2>
+    <h2> Name={{name1|uppercase}}</h2>
+    <h2> Name={{name2|lowercase}}</h2>
+    <h2></h2>
+    <h3 [ngStyle]="var1">hii</h3>
+    <button [customOver]="'green'" (click)="changeColor()">change</button>
+    
+   <h2>Its Structural Directive</h2>
+   <h2><label forName="Test the Data" *ngIf="isHidden" [customOver]="'Black'">Test the data</label>
+   </h2>
+   <ul>
+   <li [customOver]="'blue'" *ngFor="let item of num">
+    {{item}}
+   </li>
+   </ul>
+   <table>
+   <tr>
+   <th>Name</th>
+   <th>City</th>
+   </tr>
+   <tr *ngFor="let st of student" [customOver]="'pink'">
+   <td>{{st.name}}</td>
+   <td>{{st.city}}</td>
+   </tr>
+   </table>
+  <h2>Todays Date Is {{TodaysDate|date:'dd/MM/yyyy hh:mm'}}</h2>
+  <h2> The cost of product is {{cost|currency:'INR':false}}</h2>
+  <h2> The cost of product is {{cost|currency:'INR'}}</h2>
+  student object={{student|json}}
+-->
+<h1>Custom pipe</h1>
+<h1>{{myName|uppercase}}</h1>
+     <h1>The cost is {{cost|currency:'INR'}}</h1>
+     <h1>the cube of {{cnum}} is {{cnum|cube}}</h1>
+
+     <h2>{{Name1|greet}}</h2>
+<h2>squre of {{num2}} is {{num2|squre}}</h2>

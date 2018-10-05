@@ -1,0 +1,26 @@
+<h1>{{title}}</h1>
+{{studentModel.value|json}}
+<form #studentModel="ngForm"> template variable
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" #name1="ngModel" name="txtName" class="form-control" [(ngModel)]="name" required/>
+    </div>
+    <div class ="alert alert-danger" [hidden]="name1.valid || name1.pristine"> [(ngModel)] () means events [] attributes at the same time
+        Name is required
+    </div>
+
+   
+    <div class="form-group">
+        <label for="City">City</label>
+        <input type="text" name="txtCity" class="form-control" [(ngModel)]="city"/ >
+        
+    </div>
+    
+    <div class="form-group">
+        <label for="Phone">Phone</label>
+        <input type="text" name="txtPhone" class="form-control" [(ngModel)]="phone"/>
+    </div>
+    <div class="form-group">
+<button type="submit" name="submit" class="btn btn-primary" (click)="saveInfo(studentModel.value)">Submit</button>
+    </div>
+</form>

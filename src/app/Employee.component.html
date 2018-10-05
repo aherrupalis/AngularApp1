@@ -1,0 +1,52 @@
+<h2>Attribute Directive</h2>
+<h3 [ngStyle]="headingColor">Its ngStyle Attribute</h3>
+<h3 [hidden]="isHide" [ngStyle]="headingColor1">Its Hidden Attribute</h3>
+
+<hr>
+<hr>
+<h2>Structural Directive</h2>
+<h2> <label forName="Label" *ngIf="isHidden">Hi its ngIf</label></h2>
+<ul>
+    <li *ngFor="let arr of Arr1">
+        {{arr}}
+
+    </li>
+</ul>
+<table border="1">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            City
+        </th>
+        <th>
+            Designation
+        </th>
+    </tr>
+    <tr *ngFor="let Emp of Employee">
+        <td>
+          {{Emp.name}}
+        </td>
+        <td>
+            {{Emp.city}}
+        </td>
+        <td>
+            {{Emp.designation}}
+        </td>
+    </tr>
+</table>
+<ol>
+    <li *ngFor="let str of Arr2">
+        {{str}}
+
+    </li>
+</ol>
+
+<h2>Its ngSwitchCase</h2>
+<div [ngSwitch]="color">
+    <h4 *ngSwitchCase="'red'">You picked Red Color</h4>
+    <h4 *ngSwitchCase="'Blue'">You picked Blue Color</h4>
+    <h4 *ngSwitchCase="'Black'">You picked Black Color</h4>
+    <h4 *ngSwitchDefault>You Made a wrong choice </h4>
+</div>
